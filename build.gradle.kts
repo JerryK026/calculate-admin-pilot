@@ -33,11 +33,15 @@ dependencies {
 	// data
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-jooq")
-	runtimeOnly("com.mysql:mysql-connector-j")
+	implementation("org.springframework.data:spring-data-envers")
+	runtimeOnly("com.mysql:mysql-connector-j:8.0.33")
 	runtimeOnly("com.h2database:h2")
 
 	// security
 	implementation("org.springframework.boot:spring-boot-starter-security")
+	implementation("io.jsonwebtoken:jjwt-api:0.11.5")
+	implementation("io.jsonwebtoken:jjwt-impl:0.11.5")
+	implementation("io.jsonwebtoken:jjwt-jackson:0.11.5")
 
 	// test
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
